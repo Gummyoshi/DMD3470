@@ -80,6 +80,52 @@ textarea {
   resize: vertical;
 }
 
+.phone{
+  height: clamp(160px, 25vh, 320px);
+  width: auto;
+  flex-shrink: 0;
+}
+
+
+.hero p {
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+
+
+
+.blue{
+  background-color: #001540;
+}
+
+.red{
+  background-color: #f00;
+}
+.dark{
+  background-color: #222;
+}
+
+.square{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.section-white {
+  background: white;
+}
+
+.section-white .col-6.col-md-3 {
+  flex: 0 0 auto;   /* prevents stretching */
+  width: auto;
+}
+
+.teeny-tiny-text{
+  font-size: 0.7rem;
+}
+
+
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
