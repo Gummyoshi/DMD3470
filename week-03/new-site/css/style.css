@@ -86,7 +86,9 @@ textarea {
   flex-shrink: 0;
 }
 
-
+.hero{
+  background: radial-gradient(circle 200px, rgb(106, 19, 106), rgb(13, 13, 85));
+}
 .hero p {
   font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 }
@@ -95,6 +97,10 @@ textarea {
 
 .blue{
   background-color: #001540;
+}
+
+.blueText{
+  color: red;
 }
 
 .red{

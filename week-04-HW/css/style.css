@@ -1,0 +1,8 @@
+#hero{
+    min-height: 100vh;
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
