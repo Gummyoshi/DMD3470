@@ -27,6 +27,8 @@ URI     : https://colorlib.com
     <link rel="stylesheet" href="css/themify-icons.css">
     <!-- Owl carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!--Scroll thingy!-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -59,11 +61,11 @@ URI     : https://colorlib.com
 
 
     <header class="bg-gradient" id="home">
-        <div class="container mt-5">
+        <div class="container mt-5" data-aos="fade-up">
             <h1>Mobile App Landing Page Template</h1>
             <p class="tagline">The one and only solution for any kind of mobila app landing needs. Just change the screenshots and texts and you are good to go. </p>
         </div>
-        <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div>
+        <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid" data-aos="fade-up"></div>
     </header>
 
     <div class="client-logos my-5">
@@ -143,7 +145,7 @@ URI     : https://colorlib.com
                 </div>
             </div>
             <div class="perspective-phone">
-                <img src="images/perspective.png" alt="perspective phone" class="img-fluid">
+                <img src="images/perspective.png" alt="perspective phone" class="img-fluid" data-aos="zoom-in">
             </div>
         </div>
 
@@ -246,7 +248,7 @@ URI     : https://colorlib.com
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
+                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid" data-aos="fade-right">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div>
@@ -293,7 +295,7 @@ URI     : https://colorlib.com
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/iphonex.png" alt="iphone" class="img-fluid">
+                    <img src="images/iphonex.png" alt="iphone" class="img-fluid" data-aos="fade-left">
                 </div>
 
             </div>
@@ -524,6 +526,17 @@ URI     : https://colorlib.com
     <script src="js/owl.carousel.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 800, 
+        once: false,     
+        mirror: true,
+        offset: 120   
+    });
+    </script>
 
 </body>
 
