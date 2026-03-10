@@ -1,0 +1,619 @@
+.blue{
+    background-color: aqua;
+}
+
+.hero{
+    width: 100vw;
+    height: auto;
+
+    background-color: rgb(192, 242, 255);
+}
+
+.circle{
+    background-color: black;
+    border-radius: 80px;
+    width: 60px;
+    height: 60px;
+    transition: background-color .4s ease;
+}
+
+.circle:hover{
+    background-color: #197BBD;
+}
+
+.circle-m{
+    background-color: black;
+    border-radius: 80px;
+    width: 60px;
+    height: 60px;
+    transition: background-color 1s ease;
+}
+
+.circle-l:hover{
+    background-color: #197BBD;
+}
+
+.circle-l{
+    background-color: black;
+    border-radius: 80px;
+    width: 60px;
+    height: 60px;
+    transition: background-color 3s ease;
+}
+
+.circle-m:hover{
+    background-color: #197BBD;
+}
+
+.transitions-page{
+    width: 100vw;
+    height: 800px;
+
+    background-color: #0A1128;
+}
+
+.section2{
+    width: 100vw;
+    height: auto;
+    padding-bottom: 20px;
+
+    background-color: #197BBD;
+}
+
+.section3{
+    width: 100vw;
+    height: auto;
+
+    background-color: rgb(192, 242, 255);
+}
+
+.square{
+    width: 1000px;
+    height: auto;
+    background-color: #125E8A;
+    border-radius: 10px;
+    color: 125E8A;
+}
+
+.highlightText{
+    transition: font-weight 0.2s ease, color 0.2s ease;
+}
+
+.highlightTextBlue{
+    transition: font-weight 0.2s ease, color 0.2s ease;
+}
+
+.highlightTextWhite{
+    transition: font-weight 0.2s ease, color 0.2s ease;
+}
+
+.highlightText:hover{
+    font-weight: bold;
+    color: black;
+}
+
+.highlightTextBlue:hover{
+    font-weight: bold;
+    color: aqua;
+}
+
+.highlightTextWhite:hover{
+    font-weight: bold;
+    color: white;
+}
+
+.fade{
+    animation: fade 4s forwards;
+}
+
+.color-swap{
+    animation: baseToKeyFrame 4s forwards;
+}
+
+.button-special{
+    background-color: #F79F79;
+    border-color: black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#name{
+    animation: blackToWhite 4s infinite alternate;
+}
+
+
+.top1-font{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(2.5rem, 7vw, 7rem);
+}
+
+.top-font-anim{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(2.5rem, 7vw, 7rem);
+
+    display: inline-block;
+    transition: transform 0.4s ease, letter-spacing 0.4s ease, color 0.4s ease;
+}
+
+#KBTN{
+    animation: colorCircle 8s infinite;
+}
+
+#TBTN{
+    transition: all 0.35s ease;
+}
+
+#TBTN:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.delay-short{
+    display: inline-block;
+    transition: transform 1s ease .5s;
+}
+
+.delay-short:hover{
+    transform: scale(1.3);
+}
+
+.delay-medium{
+    display: inline-block;
+    transition: transform 1s ease 1s;
+}
+
+.delay-medium:hover{
+    transform: scale(1.2);
+}
+
+.delay-long{
+    display: inline-block;
+    transition: transform 1s ease 2s;
+}
+
+.delay-long:hover{
+    transform: scale(1.2);
+}
+
+.time-func-ease{
+    display: inline-block;
+    transition: transform 3s ease;
+}
+
+.time-func-ease:hover{
+    transform: rotate(360deg);
+}
+
+.time-func-ease-in{
+    display: inline-block;
+    transition: transform 3s ease-in;
+}
+
+.time-func-ease-in:hover{
+    transform: rotate(360deg);
+}
+
+.time-func-linear{
+    display: inline-block;
+    transition: transform 3s linear;
+}
+
+.time-func-linear:hover{
+    transform: rotate(360deg);
+}
+
+.time-func-ease-out{
+    display: inline-block;
+    transition: transform 3s ease-out;
+}
+
+.time-func-ease-out:hover{
+    transform: rotate(360deg);
+}
+
+.hover-underline{
+    transition: letter-spacing 0.6s ease, color 0.6s ease;
+}
+
+.hover-underline:hover{
+  letter-spacing: 6px;
+  color: #125E8A;
+}
+
+.top-font-anim:hover{
+    transform: scale(1.15) rotate(-2deg);
+    letter-spacing: 4px;
+    color: #125E8A;
+}
+
+.subheading-font{
+    font-family: "Bungee", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: clamp(1rem, 3.5vw, 3.5rem);
+}
+
+.body-font{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(.8rem, 2.8vw, 2.8rem);
+}
+
+.body-font-small{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  font-size: clamp(.8rem, 2vw, 2em);
+}
+
+.body-font-tiny{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  font-size: clamp(.8rem, 2vw, 2em);
+}
+
+.body-font-tiny2{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: black;
+  font-size: clamp(.8rem, 2vw, 2em);
+}
+
+.body-font-very-small{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: black;
+  font-size: clamp(.8rem, 2vw, 2em);
+}
+
+.button-font{
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: clamp(.6rem, 2.1vw, 2.1rem);
+}
+
+.fade{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+.card-custom{
+    border-radius: 24px;
+    border: none;
+    padding: 1.5rem;
+    min-height: 220px;   
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    background-color: white;
+}
+
+.black-font{
+    color: black;
+}
+
+.black-font-c{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: 400;
+
+    font-family: "Josefin Sans", sans-serif;
+    color: black;
+    font-style: normal;
+    text-align: center;
+    font-size: clamp(.8rem, 2vw, 2em);
+}
+
+.card-title-custom{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    color: black;
+    text-align: center;
+    font-size: clamp(1.2rem, 3vw, 3em);
+}
+
+.card-text-custom{
+    margin-top: 0.75rem;
+    font-weight: 400;
+
+    font-family: "Josefin Sans", sans-serif;
+    color: #555;
+    font-style: normal;
+    text-align: center;
+    font-size: clamp(.8rem, 2vw, 2em);
+}
+
+.card-text-custom22{
+    margin-top: 0.75rem;
+    font-weight: 400;
+
+    font-family: "Josefin Sans", sans-serif;
+    color: #555;
+    font-style: normal;
+    text-align: left;
+    font-size: clamp(.8rem, 2vw, 2em);
+}
+
+.color-example{
+    transition: color .6s ease;
+}
+
+.color-example:hover{
+    color: #197BBD;
+}
+
+.background-color-example{
+    transition: all .6s ease;
+}
+
+.background-color-example:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.transform-example{
+    display: inline-block;
+    transition: all .6s ease;
+}
+
+.transform-example:hover{
+    transform: rotate(10deg) scale(1.2);
+}
+
+.opacity-example{
+    transition: opacity .6s ease;
+}
+
+.opacity-example:hover{
+    opacity: 0.1;
+}
+
+.letter-spacing-example{
+    transition: letter-spacing 1s ease;
+}
+
+.letter-spacing-example:hover{
+    letter-spacing: 2px;
+}
+
+
+
+/*
+ANIMATION DEFINITIONS
+*/
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes colorCircle{
+    0%{
+        background-color: #F79F79;
+    }
+    33%{
+        background-color: #fecbb5;
+    }
+    66%{
+        background-color: #877167;
+    }
+    100%{
+        background-color: #F79F79;
+    }
+}
+
+@keyframes blackToWhite{
+    from{
+        color: black;
+    }
+    to{
+        color: white;
+    }
+}
+
+@keyframes baseToKeyFrame{
+    0%{
+        background-color: rgb(192, 242, 255);
+    }
+    50%{
+        background-color: rgb(255, 255, 255);
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+.shape{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+
+    animation: circleToDiamond 2s linear infinite alternate;
+}
+
+@keyframes circleToDiamond{
+    0%{
+        border-radius: 80%;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        border-radius: 0%;
+    }
+
+    100%{
+        border-radius: 0%;
+        transform: rotate(45deg);
+    }
+}
+
+/*BALL*/
+.bounce-ball{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+
+    animation: bounce 1s infinite alternate ease-in-out;
+}
+
+@keyframes bounce{
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-40px);
+    }
+}
+
+/*spin square*/
+.spin-square{
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    background-color: white;
+
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/*PULSE CIRCLE*/
+.pulse-circle{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.4);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.example-shapes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* controls spacing */
+    padding-bottom: 40px;
+}
+
+.orbit-container{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:2px dashed white;
+    position:relative;
+}
+
+.orbit-dot{
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    animation: orbit 3s linear infinite;
+}
+
+@keyframes orbit{
+    from{
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(50px) rotate(-360deg);
+    }
+}
+
+.rainbow-box{
+    width:100px;
+    height:100px;
+    border:5px solid red;
+
+    animation: rainbowSpin 4s linear infinite;
+}
+
+@keyframes rainbowSpin{
+    0%{
+        transform: rotate(0deg);
+        border-color:red;
+    }
+
+    25%{
+        border-color:orange;
+    }
+
+    50%{
+        border-color:lime;
+    }
+
+    75%{
+        border-color:blue;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        border-color:red;
+    }
+}

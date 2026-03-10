@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Animations</title>
+</head>
+<body>
+    <!--HERO-->
+    <div class="hero p-5" id="hero1">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 justify-content-center align-items-center d-flex">
+                    <h1 class="top-font-anim">CSS Animations</h1>
+                </div>
+                <div class="col-12 justify-content-center align-items-center d-flex">
+                    <p class="body-font">A project by <span id="name">Connor Lafferty</span></p>
+                </div>
+                <div class="col-12 justify-content-center align-items-center d-flex">
+                    <p class="subheading-font">What is a <span class="hover-underline">CSS Animation?</span></p>
+                </div>
+
+                <div class="square col-12 pt-3 d-flex justify-content-center align-items-center">
+                    <p class="body-font-small"><span class="highlightText">CSS animations are a way to transition between styles,</span> <span class="highlightText"> using one of two main methods,</span> <span class="highlightTextBlue"> Keyframes </span><span class="highlightText"> or</span> <span class="highlightTextWhite">Transitions</span>.
+                        <span class="highlightTextBlue">Keyframes</span> <span class="highlightText">are used to make custom animations and </span><span class="highlightTextWhite">transitions</span> <span class="highlightText"> are usually for simpler animations between two states.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--TRANSITIONS-->
+    <div class="section2">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12">
+                    <h3 class="col-12 justify-content-center align-items-center d-flex pt-5 top1-font">Transitions</h3>
+                </div>
+                <div class="col-12">
+                    <p class="body-font-tiny">The first way to animate with just CSS is the 'transition' keyword. This keyword carries four paramters with it, each serving a special purpose.</p>
+                </div>
+
+                <div class="container py-2">
+                    <div class="row g-4">
+                    
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">property</h3>
+                            <p class="card-text-custom">
+                                The property parameter is simple. It is the CSS property that you want to animate. Examples would be	
+                                <span class="black-font"><br><span class="color-example">color</span>
+                                <br><span class="background-color-example">background-color</span>
+                                <br><span class="transform-example">transform</span>
+                                <br><span class="opacity-example">opacity</span>
+                                <br><span class="letter-spacing-example">letter-spacing</span></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                        <h3 class="card-title-custom">duration</h3>
+                        <p class="card-text-custom">
+                            The duration parameter is, again, relatively simple. Here you specify how long you want the animation to take.
+                        </p>
+                        <p class="black-font-c">short (0.4s)</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="circle"></div>
+                        </div>
+                        <p class="black-font-c">medium (1s)</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="circle-m"></div>
+                        </div>
+                        <p class="black-font-c">long (3s)</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="circle-l"></div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                        <h3 class="card-title-custom">timing-function</h3>
+                        <p class="card-text-custom">
+                            Timing-function controls how the speed of the animation changes over time. 
+                            It determines whether the animation starts slowly, quickly, or moves at a constant rate.
+                            Examples include
+                            <span class="black-font"><br><span class="time-func-ease">ease</span>
+                            <br><span class="time-func-linear">linear</span>
+                            <br><span class="time-func-ease-in">ease-in</span>
+                            <br><span class="time-func-ease-out">ease-out</span></span>
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                        <h3 class="card-title-custom">delay</h3>
+                        <p class="card-text-custom">
+                            Delay simply controls how long the animation waits before it begins.
+                            <span class="black-font"><br><span class="delay-short">short (0.5s)</span>
+                            <br><span class="delay-medium">medium (1s)</span>
+                            <br><span class="delay-long">long (2s)</span></span>
+                        </p>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!--ANIMATIONS-->
+<div class="section3">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <div class="col-12">
+                <h3 class="col-12 justify-content-center align-items-center d-flex pt-5 top1-font">
+                    Animations
+                </h3>
+            </div>
+
+            <div class="col-12">
+                <p class="body-font-tiny black-font">
+                    The second way to animate with CSS is using the <span class="black-font">animation</span> property together with 
+                    <span class="black-font">@keyframes</span>. These allow developers to create more complex and customizable animations. 
+                    The animation property has eight parameters that control how an animation behaves.
+                </p>
+            </div>
+
+            <div class="container py-2">
+                <div class="row g-4">
+
+                    <!-- animation-name -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">animation-name</h3>
+                            <p class="card-text-custom">
+                                Animation-name specifies which <span class="black-font">@keyframes</span> animation the element should use. 
+                                The value must match the name of an existing keyframes block.
+                                <span class="black-font">
+                                <br><br>.box { animation-name: spin; }
+                                <br>@keyframes spin { }
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- animation-duration -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">animation-duration</h3>
+                            <p class="card-text-custom">
+                                Animation-duration determines how long one cycle of the animation takes to complete. 
+                                It is measured in seconds or milliseconds.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- animation-timing-function -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">animation-timing-function</h3>
+                            <p class="card-text-custom">
+                                Timing-function controls how the speed of the animation changes over time. 
+                                It determines whether the animation starts slowly, ends slowly, or moves at a constant rate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- animation-delay -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">animation-delay</h3>
+                            <p class="card-text-custom">
+                                Animation-delay controls how long the animation waits before starting after it is triggered. 
+                                This allows developers to stagger animations or synchronize them with other events.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- animation-iteration-count -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">animation-iteration-count</h3>
+                            <p class="card-text-custom">
+                                Animation-iteration-count determines how many times the animation will repeat. 
+                                It can run a set number of times or continue forever.
+
+                                <span class="black-font">
+                                <br>animation-iteration-count: 3;
+                                <br><br>animation-iteration-count: infinite;
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- animation-direction -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">animation-direction</h3>
+                            <p class="card-text-custom">
+                                Animation-direction controls the direction the animation plays. 
+                                It can play normally, in reverse, or alternate between forward and backward.
+
+                                <span class="black-font">
+                                <br>normal
+                                <br>reverse
+                                <br>alternate
+                                <br>alternate-reverse
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- animation-fill-mode -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">animation-fill-mode</h3>
+                            <p class="card-text-custom">
+                                Animation-fill-mode determines which styles apply before the animation begins 
+                                and after it finishes. This allows the element to keep the animation's final state.
+
+                                <span class="black-font">
+                                <br>none
+                                <br>forwards
+                                <br>backwards
+                                <br>both
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- animation-play-state -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">animation-play-state</h3>
+                            <p class="card-text-custom">
+                                Animation-play-state controls whether the animation is currently running or paused. 
+                                It is often used with hover interactions or JavaScript to start or stop animations.
+
+                                <span class="black-font">
+                                <br>animation-play-state: running;
+                                <br>animation-play-state: paused;
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                    <h3 class="col-12 justify-content-center align-items-center d-flex pt-5 top1-font">
+                            Keyframes
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        <p class="body-font-tiny black-font">
+                            @keyframes in CSS defines the steps of an animation by specifying how styles change at different points during the animation. You set values at percentages (like 0%, 50%, 100%) or using from and to to describe the starting and ending states. The animation is then applied to an element using the animation property, which controls things like duration, timing, and repetition.
+                        </p>
+                    </div>
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">@keyframe example</h3>
+                            <p class="card-text-custom22">
+
+                                <span class="black-font">
+                                <br>@keyframes pulse{
+                                    <br> 0% {
+                                        <br>  transform: scale(1);
+                                    <br>}
+
+                                    <br> 50%{
+                                        <br>  transform: scale(1.4);
+                                    <br>}
+
+                                    <br> 100%{
+                                        <br>  transform: scale(1);
+                                    <br>}
+                                <br>}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="section2">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <div class="col-12">
+                <h3 class="col-12 justify-content-center align-items-center d-flex pt-5 top1-font">
+                    Examples
+                </h3>
+            </div>
+
+            <div class="example-shapes">
+                <div class="shape col-3"></div>
+                <div class="bounce-ball col-3"></div>
+                <div class="spin-square col-3"></div>
+                <div class="pulse-circle col-3"></div>
+            </div>
+
+            <div class="example-shapes">
+                <div class="orbit-container">
+                    <div class="orbit-dot"></div>
+                </div>
+
+                <div class="rainbow-box"></div>
+            </div>
+        </div>
+</div>
+
+<div class="section3">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <div class="col-12">
+                <h3 class="col-12 justify-content-center align-items-center d-flex pt-5 top1-font">
+                    Browser Support
+                </h3>
+            </div>
+
+            <!-- animation-direction -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-custom">
+                            <h3 class="card-title-custom">modern browsers</h3>
+                            <p class="card-text-custom">
+                                The vast majority of modern browsers support CSS animations. If they don't, make sure to have your non-animated state also look good. This way if the animation is unable to play, it doesn't look awful.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+</div>
+
+<div class="section3">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <div class="col-12">
+                <h3 class="col-12 justify-content-center align-items-center d-flex pt-5 top1-font">
+                    Resources
+                </h3>
+            </div>
+            <p>
+                <p class="body-font-tiny2">
+                    https://developer.mozilla.org<br>
+                    https://www.w3schools.com<br>
+                    https://thoughtbot.com<br>
+                    https://animate.style<br>
+                    https://animista.net<br>
+                    https://cssanimation.rocks<br>
+                    https://coolcssanimation.com<br>
+                    https://www.awwwards.com<br>
+                    https://prismic.io<br>
+                    https://blog.hubspot.com<br>
+                    https://webflow.com
+                </p>
+            </p>
+
+
+    
+
+
+
+    <script src="jss/script.js"></script>
+</body>
+</html>
