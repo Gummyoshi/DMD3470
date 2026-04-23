@@ -1,12 +1,15 @@
+/*WE STARTED HERE! HERE! HERE!*/
+
 :root {
-  --bg: #eaf6ff;
-  --bg-light: #f4fbff;
-  --bg-soft: #d9efff;
-  --bg-deep: #c5e6ff;
+  --bg: #43dff0;
+  --bg-light: #74f3ff;
+  --bg-soft: #2fd3e8;
+  --bg-deep: #16bfd6;
+  --bg-dark: #0fa4bf;
 
   --white: #ffffff;
   --text: #3b220f;
-  --muted: #7a6757;
+  --muted: #5a5d52;
 
   --wood: #8a5526;
   --wood-dark: #5a3416;
@@ -16,10 +19,10 @@
   --gold-dark: #ba832e;
   --gold-light: #f4cb7c;
 
-  --line: #d5e7f5;
+  --line: rgba(255, 255, 255, 0.22);
   --line-warm: #e7d4bc;
 
-  --shadow: 0 18px 45px rgba(64, 107, 145, 0.14);
+  --shadow: 0 18px 45px rgba(0, 98, 122, 0.18);
 
   --radius: 24px;
   --radius-sm: 18px;
@@ -42,10 +45,14 @@ body {
   color: var(--text);
   line-height: 1.6;
   background:
-    radial-gradient(circle at 15% 18%, rgba(125, 196, 255, 0.3), transparent 20%),
-    radial-gradient(circle at 83% 16%, rgba(89, 166, 255, 0.16), transparent 18%),
-    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.45), transparent 24%),
-    linear-gradient(180deg, var(--bg-light) 0%, var(--bg) 55%, var(--bg-soft) 100%);
+    radial-gradient(circle at 18% 22%, rgba(255,255,255,0.18), transparent 0 12%),
+    radial-gradient(circle at 78% 18%, rgba(255,255,255,0.14), transparent 0 10%),
+    radial-gradient(circle at 30% 72%, rgba(0, 168, 196, 0.16), transparent 0 18%),
+    linear-gradient(135deg, rgba(255,255,255,0.08) 25%, transparent 25%) 0 0 / 38px 38px,
+    linear-gradient(225deg, rgba(255,255,255,0.06) 25%, transparent 25%) 0 0 / 38px 38px,
+    linear-gradient(315deg, rgba(0, 145, 170, 0.08) 25%, transparent 25%) 0 0 / 38px 38px,
+    linear-gradient(45deg, rgba(0, 145, 170, 0.08) 25%, transparent 25%) 0 0 / 38px 38px,
+    linear-gradient(180deg, var(--bg-light) 0%, var(--bg) 45%, var(--bg-soft) 72%, var(--bg-deep) 100%);
 }
 
 img {
@@ -176,10 +183,12 @@ button {
   overflow: hidden;
   padding: 80px 0 120px;
   background:
-    radial-gradient(circle at 12% 16%, rgba(124, 197, 255, 0.28), transparent 24%),
-    radial-gradient(circle at 86% 22%, rgba(255, 255, 255, 0.45), transparent 18%),
-    radial-gradient(circle at 50% 46%, rgba(174, 203, 255, 0.18), transparent 10%),
-    linear-gradient(180deg, #f5fbff 0%, #e9f6ff 100%);
+    radial-gradient(circle at 14% 18%, rgba(255,255,255,0.18), transparent 0 18%),
+    radial-gradient(circle at 84% 20%, rgba(255,255,255,0.12), transparent 0 14%),
+    radial-gradient(circle at 48% 52%, rgba(0, 166, 191, 0.18), transparent 0 16%),
+    linear-gradient(135deg, rgba(255,255,255,0.07) 25%, transparent 25%) 0 0 / 42px 42px,
+    linear-gradient(225deg, rgba(255,255,255,0.05) 25%, transparent 25%) 0 0 / 42px 42px,
+    linear-gradient(180deg, #79f6ff 0%, #43dff0 52%, #1fc7de 100%);
 }
 
 .hero-grid {
@@ -229,22 +238,22 @@ button {
 .phone {
   position: absolute;
   border-radius: 44px;
-  background: linear-gradient(180deg, #ffffff, #f5f9ff);
+  background: linear-gradient(180deg, #000000, #151515);
   box-shadow: 0 24px 60px rgba(77, 108, 147, 0.22);
   padding: 16px;
   overflow: hidden;
-  border: 8px solid rgba(255, 255, 255, 0.82);
+  /*border: 8px solid rgba(38, 38, 38, 0.82);*/
 }
 
 .phone::before {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 22px;
   left: 50%;
   transform: translateX(-50%);
   width: 30%;
   height: 20px;
-  background: #22314f;
+  background: #000000;
   border-radius: 20px;
   z-index: 2;
 }
@@ -282,7 +291,7 @@ button {
 .hero-shape-1 {
   width: 380px;
   height: 380px;
-  background: rgba(118, 191, 255, 0.12);
+  background: rgba(255, 255, 255, 0.12);
   top: -90px;
   right: -90px;
 }
@@ -290,7 +299,7 @@ button {
 .hero-shape-2 {
   width: 220px;
   height: 220px;
-  background: rgba(255, 214, 136, 0.14);
+  background: rgba(255, 221, 138, 0.10);
   bottom: 50px;
   left: -60px;
 }
@@ -298,7 +307,7 @@ button {
 .hero-shape-3 {
   width: 120px;
   height: 120px;
-  background: rgba(178, 200, 255, 0.2);
+  background: rgba(0, 150, 180, 0.16);
   top: 22%;
   left: 48%;
 }
@@ -392,7 +401,9 @@ button {
 
 /* HOW IT WORKS */
 .how-it-works {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(215, 239, 255, 0.28) 100%);
+
+  background: linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(0, 156, 181, 0.10) 100%);
+
 }
 
 .how-grid {
@@ -458,6 +469,14 @@ button {
   width: 300px;
   height: 580px;
   transform: rotate(5deg);
+  z-index: 2;
+}
+
+.left-phone {
+  position: relative;
+  width: 300px;
+  height: 580px;
+  transform: rotate(-5deg);
   z-index: 2;
 }
 
@@ -695,15 +714,53 @@ button {
 }
 
 .review-card {
-  max-width: 860px;
+
+  max-width: 720px;
+
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  background: rgba(255, 255, 255, 0.85);
+
   border-radius: 30px;
-  padding: 46px 34px;
+
+  padding: 60px 36px 40px;
+
   text-align: center;
-  box-shadow: 0 10px 30px rgba(59, 104, 147, 0.08);
+
+  box-shadow: 0 12px 35px rgba(59, 104, 147, 0.12);
+
   backdrop-filter: blur(10px);
+
+  position: relative;
+
+}
+
+.review-avatar {
+
+  position: absolute;
+
+  top: -40px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+}
+
+.review-avatar img {
+
+  width: 80px;
+
+  height: 80px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 4px solid white;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
 }
 
 .quote-mark {
@@ -715,22 +772,112 @@ button {
 }
 
 .review-text {
-  margin: 0 auto 18px;
-  max-width: 680px;
+
+  margin: 20px auto 20px;
+
+  max-width: 600px;
+
   color: var(--muted);
+
   font-size: 1.08rem;
+
+  line-height: 1.6;
+
 }
 
 .review-author {
+
   margin: 0;
+
   font-weight: 700;
+
   color: var(--wood-dark);
+
+  font-size: 1.1rem;
+
+}
+
+.review-role {
+
+  margin: 4px 0 0;
+
+  font-size: 0.9rem;
+
+  color: #7a7a7a;
+
 }
 
 /* CTA */
 .cta {
-  background: linear-gradient(135deg, var(--wood), var(--wood-dark));
+  position: relative;
+  overflow: hidden;
   color: white;
+
+  background:
+    /* PLANK SEAMS (3–4 boards) */
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 24%,
+      rgba(60, 30, 10, 0.45) 24.5%,
+      transparent 25.5%,
+
+      transparent 49%,
+      rgba(60, 30, 10, 0.45) 49.5%,
+      transparent 50.5%,
+
+      transparent 74%,
+      rgba(60, 30, 10, 0.45) 74.5%,
+      transparent 75.5%,
+
+      transparent 100%
+    ),
+
+    /* WOOD GRAIN (very subtle) */
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.03) 0px,
+      rgba(255,255,255,0.03) 2px,
+      rgba(0,0,0,0.03) 2px,
+      rgba(0,0,0,0.03) 6px
+    ),
+
+    /* LIGHTING (top highlight, bottom shade) */
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.08),
+      rgba(0,0,0,0.12)
+    ),
+
+    /* BASE WOOD */
+    linear-gradient(135deg, var(--wood), var(--wood-dark));
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.06) 0%,
+      transparent 10%,
+      transparent 24%,
+
+      rgba(0,0,0,0.12) 26%,
+      transparent 28%,
+      transparent 49%,
+
+      rgba(0,0,0,0.12) 51%,
+      transparent 53%,
+      transparent 74%,
+
+      rgba(0,0,0,0.12) 76%,
+      transparent 78%,
+      transparent 100%
+    );
 }
 
 .cta-grid {
@@ -747,11 +894,17 @@ button {
 
 /* FOOTER */
 .site-footer {
-  background: #d6ecfb;
-  color: rgba(60, 74, 96, 0.8);
+
+  background: #20bfd8;
+
+  color: rgba(255, 255, 255, 0.86);
+
   padding: 28px 0;
+
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.75);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+
 }
 
 .footer-grid p {
@@ -941,9 +1094,17 @@ button {
     padding: 28px 22px;
   }
 
+  .feature-card,
+.step-card,
+.dashboard-card,
+.price-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
   .tutorial-box,
   .dashboard-card,
-  .review-card,
   .price-card {
     border-radius: 22px;
   }
@@ -955,5 +1116,87 @@ button {
   .play-button {
     width: 84px;
     height: 84px;
+  }
+}
+
+
+/* REVIEW */
+.review {
+  background: transparent;
+  padding-top: 140px;
+}
+
+.review-card {
+  max-width: 950px;
+  margin: 0 auto;
+  background: rgba(235, 246, 250, 0.92);
+  border-radius: 42px;
+  padding: 110px 56px 56px;
+  text-align: center;
+  box-shadow: 0 18px 45px rgba(0, 98, 122, 0.16);
+  position: relative;
+}
+
+.review-avatar {
+  position: absolute;
+  top: -58px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  padding: 7px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
+}
+
+.review-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.review-text {
+  margin: 0 auto 28px;
+  max-width: 1100px;
+  color: #5e6258;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  line-height: 1.55;
+}
+
+.review-author {
+  margin: 0;
+  font-weight: 800;
+  color: var(--wood-dark);
+  font-size: 1.15rem;
+}
+
+.review-role {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  color: #7b7f86;
+}
+
+@media (max-width: 560px) {
+  .review {
+    padding-top: 110px;
+  }
+
+  .review-card {
+    border-radius: 28px;
+    padding: 90px 24px 32px;
+  }
+
+  .review-avatar {
+    width: 92px;
+    height: 92px;
+    top: -46px;
+    padding: 6px;
+  }
+
+  .review-text {
+    font-size: 1.05rem;
   }
 }

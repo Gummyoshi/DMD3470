@@ -1,3 +1,4 @@
+// NAV TOGGLE
 const menuToggle = document.getElementById("menuToggle");
 const siteNav = document.getElementById("siteNav");
 
@@ -11,29 +12,20 @@ document.querySelectorAll(".site-nav a").forEach(link => {
   });
 });
 
+
+// VIDEO PLAY (INLINE, NO MODAL)
 const playButton = document.getElementById("playButton");
-const videoModal = document.getElementById("videoModal");
-const modalBackdrop = document.getElementById("modalBackdrop");
-const modalClose = document.getElementById("modalClose");
+const tutorialBox = document.querySelector(".tutorial-box");
 
-function openModal() {
-  videoModal.classList.add("open");
-  videoModal.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
-}
-
-function closeModal() {
-  videoModal.classList.remove("open");
-  videoModal.setAttribute("aria-hidden", "true");
-  document.body.style.overflow = "";
-}
-
-playButton.addEventListener("click", openModal);
-modalBackdrop.addEventListener("click", closeModal);
-modalClose.addEventListener("click", closeModal);
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    closeModal();
-  }
+playButton.addEventListener("click", () => {
+  tutorialBox.innerHTML = `
+    <iframe
+      src="https://www.youtube.com/embed/ZILH781tceE?autoplay=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="position:absolute; inset:0; width:100%; height:100%; border:0;">
+    </iframe>
+  `;
 });
