@@ -467,6 +467,11 @@ button {
 
 }
 
+.how-download {
+  margin-top: 10px;
+  text-align: center; /* change to center if you want */
+}
+
 .how-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
