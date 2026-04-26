@@ -361,13 +361,74 @@ button {
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  position: relative;
+  border: 2px solid transparent;
   border-radius: var(--radius);
   padding: 34px 28px;
-  box-shadow: 0 10px 30px rgba(59, 104, 147, 0.1);
   text-align: center;
   backdrop-filter: blur(10px);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(59, 104, 147, 0.1);
+  transition: all 0.3s ease;
+  --border-fill: 0deg;
+
+  /* 👇 border is invisible initially */
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    conic-gradient(
+      from var(--angle),
+      transparent 0deg,
+      transparent 360deg
+    ) border-box;
+
+  background-clip: padding-box, border-box;
+}
+
+@property --border-fill {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.feature-card:hover {
+
+  animation: drawFeatureBorder 0.45s linear forwards;
+}
+
+@keyframes drawFeatureBorder {
+  from {
+    --border-fill: 0deg;
+    background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      conic-gradient(
+        from 0deg,
+        var(--wood) 0deg var(--border-fill),
+        transparent var(--border-fill) 361deg
+      ) border-box;
+  }
+
+  to {
+    --border-fill: 361deg;
+    background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      conic-gradient(
+        from 0deg,
+        var(--wood) 0deg var(--border-fill),
+        transparent var(--border-fill) 361deg
+      ) border-box;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --border-fill {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .feature-icon {
